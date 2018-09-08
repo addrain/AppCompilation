@@ -27,25 +27,25 @@
             <Button fx:id="select" layoutX="7.0" layoutY="7.0" mnemonicParsing="false" onAction="#selectButtonHandler" text="Click to Open" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="aboutMeDesc" layoutX="253.0" layoutY="8.0" prefHeight="550.0" prefWidth="640.0">
+      <AnchorPane fx:id="aboutMeDesc" layoutX="253.0" layoutY="8.0" prefHeight="530.0" prefWidth="638.0">
          <children>
             <Label layoutX="8.0" layoutY="6.0" text="AddRain's Tools" textFill="#005ebc" underline="true">
                <font>
                   <Font name="Bodoni MT Condensed" size="50.0" />
                </font>
             </Label>
-            <Text layoutX="31.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello World!  My name is Adrian Kwok.  I graduated San Diego State University with a Bachelor's degree in Computer Science in May 2018.  Currently, I'm job hunting and creating applications for my portfolio.  This application will contain all of my projects in one.  All the projects featured in this application will be individually available in my github.  Hope you enjoy my projects!" wrappingWidth="540.13671875">
+            <Text layoutX="31.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello World!  My name is Adrian Kwok.  I graduated San Diego State University with a Bachelor's degree in Computer Science in May 2018.  Currently, I'm job hunting and creating applications for my portfolio.  This application will contain all of my projects in one.  All the projects featured in this application will be individually available in my github.  Hope you enjoy my projects!" wrappingWidth="540.13671875">
                <font>
                   <Font name="Ebrima" size="17.0" />
                </font>
             </Text>
-            <Label layoutX="321.0" layoutY="414.0" text="Contact Information:" textFill="#005ebc" underline="true">
+            <Label layoutX="141.0" layoutY="397.0" text="Contact Information:" textFill="#005ebc" underline="true">
                <font>
                   <Font name="Bodoni MT Condensed" size="50.0" />
                </font>
             </Label>
             <Text layoutX="427.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail: adriankwok96@gmail.com" />
-            <Text layoutX="480.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Git: github.com/addrain" />
+            <Text layoutX="486.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Git: github.com/addrain" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="calculatorDesc" layoutX="253.0" layoutY="8.0" prefHeight="550.0" prefWidth="640.0" visible="false">
@@ -55,7 +55,7 @@
                   <Font name="Bodoni MT Condensed" size="50.0" />
                </font>
             </Label>
-            <Text layoutX="33.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODO: Calculator Description" wrappingWidth="286.0000044107437">
+            <Text layoutX="33.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My first JavaFX project built with Scene Builder, a simple calculator.  This project helped me practice getting familiar with using JavaFX and Scene Builder." wrappingWidth="286.0000044107437">
                <font>
                   <Font name="Ebrima" size="17.0" />
                </font>
@@ -65,14 +65,14 @@
                   <Font name="Bodoni MT Condensed" size="50.0" />
                </font>
             </Label>
-            <Text layoutX="33.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODO: Feature Description" wrappingWidth="286.0000044107437">
+            <Text layoutX="33.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This calculator can multiply, divide, subtract, and add multiple numbers together.  It also implements some features to edit inputed numbers." wrappingWidth="286.0000044107437">
                <font>
                   <Font name="Ebrima" size="17.0" />
                </font>
             </Text>
             <ImageView fitHeight="529.0" fitWidth="313.0" layoutX="330.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../images/CalculatorImage.png" />
+                  <Image url="@../images/CalculatorImage.png" />
                </image>
             </ImageView>
          </children>
