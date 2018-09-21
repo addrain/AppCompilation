@@ -24,8 +24,8 @@
             </Label>
             <TextField fx:id="usernameField" layoutX="33.0" layoutY="140.0" prefHeight="25.0" prefWidth="252.0" promptText="Username" />
             <PasswordField fx:id="passwordField" layoutX="33.0" layoutY="192.0" prefHeight="25.0" prefWidth="252.0" promptText="Password" />
-            <Button fx:id="submitButton" layoutX="328.0" layoutY="192.0" mnemonicParsing="false" onAction="#signInButtonHandle" style="-fx-background-color: #FFFFFF;" text="Sign In" />
-            <Button fx:id="signUpButton" layoutX="326.0" layoutY="231.0" mnemonicParsing="false" onAction="#signUpButtonHandle" style="-fx-background-color: #FFFFFF;" text="Sign Up" />
+            <Button fx:id="submitButton" layoutX="321.0" layoutY="191.0" mnemonicParsing="false" onAction="#signInButtonHandle" style="-fx-background-color: #FFFFFF;" text="Sign In" />
+            <Button fx:id="signUpButton" layoutX="321.0" layoutY="229.0" mnemonicParsing="false" onAction="#signUpButtonHandle" style="-fx-background-color: #FFFFFF;" text="Sign Up" />
             <Text fx:id="errorText" layoutX="33.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" />
          </children>
       </AnchorPane>

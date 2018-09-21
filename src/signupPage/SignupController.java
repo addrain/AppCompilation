@@ -27,17 +27,6 @@ public class SignupController {
     @FXML
     private Text errorText;
 
-    @FXML
-    private Button backButton;
-
-    @FXML
-    private Button submitButton;
-
-    @FXML
-    private TextField emailField;
-
-    @FXML
-    private DatePicker birthField;
 
     @FXML
     void backButtonHandle(ActionEvent event) throws IOException {

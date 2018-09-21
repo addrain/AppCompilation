@@ -42,7 +42,7 @@ public class UserDaoImpl implements UserDao {
     public String insert(User user) {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        String message = "Successfully signed up";
+        String message = "Database not connected";
 
         try{
             connection = ConnectionConfiguration.getConnection();
@@ -52,6 +52,7 @@ public class UserDaoImpl implements UserDao {
             preparedStatement.setString(2, user.getPassword());
             try {
                 preparedStatement.executeUpdate();
+                message = "Successfully signed up";
             } catch (SQLIntegrityConstraintViolationException e) {
                 message = "Error: username already exists";
                 System.out.println(message);
