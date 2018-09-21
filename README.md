@@ -5,7 +5,7 @@ Adrian Kwok
 This application is meant to be a compilation of projects. This project was made with Scene Builder for GUI implementations.  
 
 ## How to Login:  
-A default account is provided if user does not want to connect to an sql database.
+A default account is provided if user does not want to connect to an sql database.  
 username: guest  
 password: password  
 
