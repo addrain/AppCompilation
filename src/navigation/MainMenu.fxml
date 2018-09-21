@@ -55,7 +55,7 @@
                   <Font name="Bodoni MT Condensed" size="50.0" />
                </font>
             </Label>
-            <Text layoutX="33.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODO: Calculator Description" wrappingWidth="286.0000044107437">
+            <Text layoutX="33.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My first JavaFX project built with Scene Builder, a simple calculator. This project helped me practice getting familiar with using JavaFX and Scene Builder." wrappingWidth="286.0000044107437">
                <font>
                   <Font name="Ebrima" size="17.0" />
                </font>
@@ -65,14 +65,14 @@
                   <Font name="Bodoni MT Condensed" size="50.0" />
                </font>
             </Label>
-            <Text layoutX="33.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TODO: Feature Description" wrappingWidth="286.0000044107437">
+            <Text layoutX="33.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This calculator can multiply, divide, subtract, and add multiple numbers.  It also implements some features to edit inputed numbers." wrappingWidth="286.0000044107437">
                <font>
                   <Font name="Ebrima" size="17.0" />
                </font>
             </Text>
             <ImageView fitHeight="529.0" fitWidth="313.0" layoutX="330.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../images/CalculatorImage.png" />
+                  <Image url="@../images/CalculatorImage.png" />
                </image>
             </ImageView>
          </children>

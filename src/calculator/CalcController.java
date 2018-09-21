@@ -6,7 +6,7 @@
             It implements addition, subtraction, multiplication, and division of doubles.
             Provides minimal capability to edit computational inputs such as modifying a double value.
 
-            Other files required: Main.java, sample.fxml
+            Other files required: Main.java, CalcLayout.fxml
  */
 
 package calculator;

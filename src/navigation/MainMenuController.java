@@ -4,7 +4,6 @@ import com.util.AlertBox;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -12,11 +11,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -61,7 +57,7 @@ public class MainMenuController implements Initializable {
         Stage window = new Stage();
         if(selected.equals("Calculator")) {
             window.setTitle(selected);
-            Parent calculatorParent = FXMLLoader.load(getClass().getResource("../calculator/sample.fxml"));
+            Parent calculatorParent = FXMLLoader.load(getClass().getResource("../calculator/CalcLayout.fxml"));
             Scene calculatorScene = new Scene(calculatorParent);
             window.setScene(calculatorScene);
             window.show();
