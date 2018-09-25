@@ -63,6 +63,19 @@ public class MainMenuController implements Initializable {
             window.show();
         }
 
+        if(selected.equals("Jungle Jump")) {
+            try {
+                //String command = "C:/Program Files (x86)" + "/Google/Chrome/Application/chrome.exe";
+                //String cwd = System.getProperty("user.dir");
+                //System.out.println("Current directory: " + cwd);
+                String command = "JungleJump/Jungle Jump.exe";
+                Runtime run = Runtime.getRuntime();
+                Process proc = run.exec(command);
+            } catch (IOException e){
+                e.printStackTrace();
+            }
+        }
+
     }
 
     @FXML
@@ -88,7 +101,7 @@ public class MainMenuController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        ObservableList<String> projects = FXCollections.observableArrayList("About me", "Calculator");
+        ObservableList<String> projects = FXCollections.observableArrayList("About me", "Calculator", "Jungle Jump");
         menu.setItems(projects);
     }
 }
