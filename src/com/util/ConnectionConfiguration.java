@@ -9,7 +9,7 @@ public class ConnectionConfiguration {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/users?useSSL=false", "root", "thepsp12");
+            
             //connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/table?useSSL=false", "username", "password");
         } catch (Exception e) {
             e.printStackTrace();
