@@ -77,5 +77,34 @@
             </ImageView>
          </children>
       </AnchorPane>
+      <AnchorPane fx:id="jungleJumpDesc" layoutX="253.0" layoutY="8.0" prefHeight="550.0" prefWidth="640.0" visible="false">
+         <children>
+            <Label layoutX="8.0" layoutY="6.0" text="Jungle Jump" textFill="#005ebc" underline="true">
+               <font>
+                  <Font name="Bodoni MT Condensed" size="50.0" />
+               </font>
+            </Label>
+            <Text layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jungle Jump is an endless runner game made in Unity using C#. Through this project, I learned not only how to work with Unity and C#, but also how to organize and create scripts that would work together." wrappingWidth="286.0000044107437">
+               <font>
+                  <Font name="Ebrima" size="17.0" />
+               </font>
+            </Text>
+            <Label layoutX="339.0" layoutY="6.0" text="Gameplay" textFill="#005ebc" underline="true">
+               <font>
+                  <Font name="Bodoni MT Condensed" size="50.0" />
+               </font>
+            </Label>
+            <Text layoutX="339.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The goal is to not get hit by a skeleton for as long as possible.  As time passes, the score increases.  To avoid skeletons, jump over them by pressing space.  Try to beat your high score." wrappingWidth="286.0000044107437">
+               <font>
+                  <Font name="Ebrima" size="17.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="282.0" fitWidth="470.0" layoutX="85.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/JungleJumpStartScreen.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
