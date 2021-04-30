@@ -31,9 +31,6 @@ public class MainMenuController implements Initializable {
     private AnchorPane calculatorDesc;
 
     @FXML
-    private AnchorPane jungleJumpDesc;
-
-    @FXML
     private Button logout;
 
     @FXML
@@ -68,6 +65,9 @@ public class MainMenuController implements Initializable {
 
         if(selected.equals("Jungle Jump")) {
             try {
+                //String command = "C:/Program Files (x86)" + "/Google/Chrome/Application/chrome.exe";
+                //String cwd = System.getProperty("user.dir");
+                //System.out.println("Current directory: " + cwd);
                 String command = "JungleJump/Jungle Jump.exe";
                 Runtime run = Runtime.getRuntime();
                 Process proc = run.exec(command);
@@ -88,19 +88,13 @@ public class MainMenuController implements Initializable {
         if(!selected.equals("Calculator")){
             calculatorDesc.setVisible(false);
         }
-        if(!selected.equals("Jungle Jump")){
-            jungleJumpDesc.setVisible(false);
-        }
 
         switch(selected){
             case "About me":
                 aboutMeDesc.setVisible(true);
                 break;
-            case "Calculator":
+            case"Calculator":
                 calculatorDesc.setVisible(true);
-                break;
-            case "Jungle Jump":
-                jungleJumpDesc.setVisible(true);
                 break;
         }
     }
