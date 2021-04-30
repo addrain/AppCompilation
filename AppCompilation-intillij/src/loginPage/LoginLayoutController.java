@@ -1,6 +1,7 @@
 package loginPage;
 
 import com.daoimpl.UserDaoImpl;
+import com.util.AlertBox;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -36,17 +37,21 @@ public class LoginLayoutController {
             stage.setScene(signInScene);
             stage.show();
         } else {
-            UserDaoImpl udi = new UserDaoImpl();
-            udi.createUserTable();
+            try {
+                UserDaoImpl udi = new UserDaoImpl();
+                udi.createUserTable();
 
-            if (udi.checkLogin(usernameField.getText().trim(), passwordField.getText().trim())) {
-                Parent signInParent = FXMLLoader.load(getClass().getResource("../navigation/MainMenu.fxml"));
-                Scene signInScene = new Scene(signInParent);
-                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                stage.setScene(signInScene);
-                stage.show();
-            } else {
-                errorText.setText("Wrong password or username");
+                if (udi.checkLogin(usernameField.getText().trim(), passwordField.getText().trim())) {
+                    Parent signInParent = FXMLLoader.load(getClass().getResource("../navigation/MainMenu.fxml"));
+                    Scene signInScene = new Scene(signInParent);
+                    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    stage.setScene(signInScene);
+                    stage.show();
+                } else {
+                    errorText.setText("Wrong password or username");
+                }
+            } catch (Exception e) {
+                AlertBox.display("Error", "Database not configured.  Use credentials: \n username: guest\n password: password");
             }
         }
     }
